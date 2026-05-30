@@ -1,0 +1,395 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f6fb;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --primary: #4f46e5;
+  --secondary: #14b8a6;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 32px 8vw 80px;
+  background: linear-gradient(120deg, #eef2ff, #fef9c3 70%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.4rem, 3vw, 3.6rem);
+  margin-bottom: 16px;
+}
+
+.subhead {
+  color: var(--muted);
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hero-stats h3 {
+  font-size: 1.6rem;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 20px;
+}
+
+.panel-card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+}
+
+.panel-card.alt {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pill {
+  background: #e0e7ff;
+  color: #312e81;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.pill.success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.panel-subtitle {
+  color: var(--muted);
+}
+
+.panel-card.alt .panel-subtitle {
+  color: #cbd5f5;
+}
+
+.progress {
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), #60a5fa);
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.panel-metrics {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.panel-metrics li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.coach-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.coach-name {
+  font-weight: 600;
+  display: block;
+}
+
+.coach-role {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.section {
+  padding: 72px 8vw;
+}
+
+.section.alt {
+  background: #ffffff;
+}
+
+.section-title {
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section-title p {
+  color: var(--muted);
+}
+
+.feature-grid,
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 12px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.schedule-card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  min-height: 260px;
+  display: grid;
+  gap: 16px;
+}
+
+.schedule-bars {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  height: 180px;
+}
+
+.bar {
+  flex: 1;
+  background: linear-gradient(180deg, #a5b4fc, #4f46e5);
+  border-radius: 12px;
+  position: relative;
+}
+
+.bar span {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.checklist {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.checklist input {
+  accent-color: var(--secondary);
+  margin-right: 10px;
+}
+
+.session {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+.toggle {
+  display: inline-flex;
+  background: #eef2ff;
+  border-radius: 999px;
+  padding: 6px;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.toggle-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.toggle-btn.active {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.15);
+}
+
+.price-card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 16px;
+}
+
+.price-card ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.price-card.featured {
+  border: 2px solid var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 48px 8vw;
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.secondary {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: inherit;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    text-align: left;
+  }
+}

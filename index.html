@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liftly | Fitness App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">Liftly</span>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <button class="btn ghost">Sign in</button>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Personalized fitness, every day</p>
+          <h1>Train smarter with adaptive workouts, recovery, and coaching.</h1>
+          <p class="subhead">
+            Liftly builds plans that match your goals and adjusts every week based on your performance,
+            schedule, and energy.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary">Start free trial</button>
+            <button class="btn secondary">See demo</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>12k+</h3>
+              <p>Active members</p>
+            </div>
+            <div>
+              <h3>4.9★</h3>
+              <p>App rating</p>
+            </div>
+            <div>
+              <h3>35 min</h3>
+              <p>Avg. workout</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-header">
+              <h2>Today’s plan</h2>
+              <span class="pill">Week 5</span>
+            </div>
+            <p class="panel-subtitle">Strength + conditioning</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 68%"></div>
+            </div>
+            <div class="progress-meta">
+              <span>45 min session</span>
+              <span>68% complete</span>
+            </div>
+            <ul class="panel-metrics">
+              <li>
+                <span>Calories</span>
+                <strong>520 kcal</strong>
+              </li>
+              <li>
+                <span>HR zone</span>
+                <strong>Zone 3</strong>
+              </li>
+              <li>
+                <span>Recovery</span>
+                <strong>Good</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="panel-card alt">
+            <div class="panel-header">
+              <h3>Coach notes</h3>
+              <span class="pill success">+3%</span>
+            </div>
+            <p class="panel-subtitle">You hit your strength target twice this week. Add 2.5kg to deadlifts.</p>
+            <div class="coach-list">
+              <div>
+                <span class="coach-name">Coach Naomi</span>
+                <span class="coach-role">Performance</span>
+              </div>
+              <button class="btn ghost">Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <div class="section-title">
+          <h2>Everything you need to progress</h2>
+          <p>Liftly combines workouts, nutrition, and recovery so you never guess what to do next.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Adaptive workouts</h3>
+            <p>Plans shift weekly based on your stats, streaks, and available time.</p>
+          </article>
+          <article class="card">
+            <h3>Recovery insights</h3>
+            <p>Sleep, soreness, and stress tracking with clear next-step guidance.</p>
+          </article>
+          <article class="card">
+            <h3>Nutrition guidance</h3>
+            <p>Macro targets, quick meal ideas, and hydration reminders built in.</p>
+          </article>
+          <article class="card">
+            <h3>Coach feedback</h3>
+            <p>Unlimited check-ins with certified trainers and weekly performance reports.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section alt">
+        <div class="section-title">
+          <h2>Your week at a glance</h2>
+          <p>Drag to adjust sessions or tap to see warm-ups, mobility, and cooldowns.</p>
+        </div>
+        <div class="schedule-grid">
+          <div class="schedule-card">
+            <h3>Weekly schedule</h3>
+            <div class="schedule-bars">
+              <div class="bar" style="height: 72%"><span>Mon</span></div>
+              <div class="bar" style="height: 55%"><span>Tue</span></div>
+              <div class="bar" style="height: 90%"><span>Wed</span></div>
+              <div class="bar" style="height: 45%"><span>Thu</span></div>
+              <div class="bar" style="height: 60%"><span>Fri</span></div>
+              <div class="bar" style="height: 35%"><span>Sat</span></div>
+              <div class="bar" style="height: 50%"><span>Sun</span></div>
+            </div>
+          </div>
+          <div class="schedule-card">
+            <h3>Daily focus checklist</h3>
+            <ul class="checklist" id="checklist">
+              <li>
+                <input type="checkbox" id="hydration" checked />
+                <label for="hydration">Hydration goal met</label>
+              </li>
+              <li>
+                <input type="checkbox" id="protein" />
+                <label for="protein">Hit protein target</label>
+              </li>
+              <li>
+                <input type="checkbox" id="mobility" checked />
+                <label for="mobility">Mobility flow complete</label>
+              </li>
+              <li>
+                <input type="checkbox" id="sleep" />
+                <label for="sleep">7.5+ hours of sleep</label>
+              </li>
+            </ul>
+            <button class="btn secondary" id="resetChecklist">Reset checklist</button>
+          </div>
+          <div class="schedule-card">
+            <h3>Upcoming session</h3>
+            <div class="session">
+              <h4>Power circuit</h4>
+              <p>5 exercises • 3 rounds • 32 min</p>
+            </div>
+            <div class="session">
+              <h4>Core stability</h4>
+              <p>10 min recovery add-on</p>
+            </div>
+            <button class="btn ghost">View workout</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="section-title">
+          <h2>Choose the plan that fits</h2>
+          <p>Simple pricing that scales with your goals. Switch anytime.</p>
+        </div>
+        <div class="toggle" role="group" aria-label="billing toggle">
+          <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+          <button class="toggle-btn" data-plan="yearly">Yearly (save 20%)</button>
+        </div>
+        <div class="pricing-grid" id="pricingGrid">
+          <article class="price-card" data-tier="starter">
+            <h3>Starter</h3>
+            <p class="price" data-monthly="$19" data-yearly="$182">$19</p>
+            <ul>
+              <li>3 workouts per week</li>
+              <li>Habit tracking</li>
+              <li>Basic analytics</li>
+            </ul>
+            <button class="btn ghost">Choose Starter</button>
+          </article>
+          <article class="price-card featured" data-tier="pro">
+            <h3>Pro</h3>
+            <p class="price" data-monthly="$39" data-yearly="$374">$39</p>
+            <ul>
+              <li>Unlimited workouts</li>
+              <li>Coach feedback</li>
+              <li>Wearable sync</li>
+            </ul>
+            <button class="btn primary">Choose Pro</button>
+          </article>
+          <article class="price-card" data-tier="team">
+            <h3>Team</h3>
+            <p class="price" data-monthly="$69" data-yearly="$662">$69</p>
+            <ul>
+              <li>Team challenges</li>
+              <li>Shared dashboards</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="btn ghost">Choose Team</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2>Ready to get started?</h2>
+        <p>Download the app and complete your first workout in minutes.</p>
+      </div>
+      <div class="footer-actions">
+        <button class="btn primary">Get the app</button>
+        <button class="btn ghost">Talk to sales</button>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
